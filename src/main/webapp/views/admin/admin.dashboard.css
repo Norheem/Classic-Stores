@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    height: 50px;
+}
+
+nav .header {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #f0a500;
+    margin-left: 20px;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .add-product,
+nav .user-link,
+nav .logout-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav .add-product:hover,
+nav .user-link:hover,
+nav .logout-link:hover {
+    color: #f0a500;
+}
+
+.welcome {
+    margin-top: 80px;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.available {
+    text-align: center;
+    margin: 20px 0;
+    color: #f0a500;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+table td img {
+    border-radius: 5px;
+}
+
+.edit-action-btn a,
+.delete-action-btn a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edit-action-btn a {
+    background-color: #007bff; /* Blue */
+    transition: background 0.3s;
+}
+
+.edit-action-btn a:hover {
+    background-color: #0056b3;
+}
+
+.delete-action-btn a {
+    background-color: #dc3545; /* Red */
+    transition: background 0.3s;
+}
+
+.delete-action-btn a:hover {
+    background-color: #b02a37;
+}
+
+.alert {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
